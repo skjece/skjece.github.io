@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regiter Form</title>
+	<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+<body>
+	<h1>REGISTERATION FORM</h1>
+	<form action="registration.php" method="POST" onsubmit="return vpassword()" enctype="multipart/form-data" >
+		<table>
+			<tr>
+				<th>USERNAME</th>
+				<td> <input type="text" name="username" onchange="vusername(this.value)"/></td>
+				<td><h6 id="xyz"></h6></td>
+			</tr>
+			
+
+			<tr>
+				<th>PASSWORD</th>
+				<td> <input type="password" name="password"  id="password" onchange="vpassword()"/></td>
+
+			</tr>	
+			
+			
+		</table>
+		<input type="submit" value="Register" />
+	</form>
+	<p>Already Registered <a href="home.php">Sign In</p>
+
+
+</body>
+</html>
